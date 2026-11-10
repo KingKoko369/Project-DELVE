@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Project D.E.L.V.E."
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://Textures/icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[layer_names]
+
+2d_physics/layer_1="Floor"
+2d_navigation/layer_1="Floor"
+2d_physics/layer_2="Wall"
+2d_navigation/layer_2="Wall"
+2d_physics/layer_3="Characters"
+2d_navigation/layer_3="Characters"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
